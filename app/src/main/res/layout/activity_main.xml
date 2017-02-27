@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_alignParentBottom="true"
+    android:gravity="bottom"
+    tools:context=".MainActivity">
+
+    <TextView android:id="@+id/loanCalcTitle"
+        android:text="@string/loan_calc_title"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/back"/>
+
+    <View
+        android:id="@+id/space0"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/loanCalcTitle"/>
+
+    <TextView android:id="@+id/loanAmount"
+        android:text="@string/loan_amount"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/space0" />
+
+    <View
+        android:id="@+id/space1"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/loanAmount"/>
+
+    <EditText android:id="@+id/edit_loanAmount"
+        android:textSize="25dp"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/start_hint"
+        android:layout_below="@+id/space1"
+        android:background="#02f0d4"/>
+
+    <View
+        android:id="@+id/space2"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/edit_loanAmount"/>
+
+    <TextView android:id="@+id/loanDurationMonths"
+        android:text="@string/loan_duration_months"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/space2" />
+
+    <View
+        android:id="@+id/space3"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/loanDurationMonths"/>
+
+    <EditText android:id="@+id/edit_loanDurationMonths"
+        android:textSize="25dp"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/start_hint"
+        android:layout_below="@+id/space3"
+        android:background="#02f0d4"/>
+
+    <View
+        android:id="@+id/space4"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/edit_loanDurationMonths"/>
+
+    <TextView android:id="@+id/loanInterestRateYear"
+        android:text="@string/loan_interest_rate_year"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/space4" />
+
+    <View
+        android:id="@+id/space5"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/loanInterestRateYear"/>
+
+    <EditText android:id="@+id/edit_loanInterestRateYear"
+        android:textSize="25dp"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/start_hint"
+        android:layout_below="@+id/space5"
+        android:background="#02f0d4"/>
+
+    <View
+        android:id="@+id/space7"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/edit_loanInterestRateYear"/>
+
+    <!--Button android:id="@+id/button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_payment"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/space7" />
+
+    <View
+        android:id="@+id/space"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/button_calculate"/-->
+
+    <EditText
+        android:id="@+id/monthlyPayment"
+        android:text=""
+        android:textSize="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/space7"
+        android:background="#EC7703"/>
+
+</RelativeLayout>
